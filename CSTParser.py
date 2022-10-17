@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # (?<=-{70}\n)(\s|.)*?(?=(?:^\s*$))
+# (?<=-{70}\n)[\s\d\.+-eE]*(?=\n\n) Fastest Regex
 # (?<=-{70}\n)(?:[\s\S]*?)(?=(?:^\s*$)) Fixed catastrophic backtracking
 # Last line in the dataset should be empty means two empty lines at last of the dataset otherwise the regex match fails
 class CSTParser:
